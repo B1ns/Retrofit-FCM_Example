@@ -54,9 +54,9 @@ public class MainActivity extends AppCompatActivity {
                 String Day = response.body().getDay();
 
 
-                textView.setText(Date);
+                textView.setText("날짜 : " +Date);
                 textView2.setText(Menu);
-                textView3.setText(Day);
+                textView3.setText("오늘은 "+Day + "요일 입니다.");
 
                 }catch (Exception e){
                     Log.d("OR", "Error");
